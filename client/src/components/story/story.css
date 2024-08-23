@@ -1,0 +1,23 @@
+.slider_element{
+    display: grid !important;
+}
+.slick-prev, .slick-next{
+    height: 40px;
+    width:  40px;
+    background-color: #a6c0f0;
+    z-index: 444;
+    border-radius: 50%;
+
+}
+.slick-prev:hover, .slick-next:hover{
+    background-color: #0747c0;
+}
+.slick-prev:hover, .slick-prev:focus, .slick-next:hover, .slick-next:focus {
+    background-color: #0747c0;
+}
+.slick-prev {
+    left: -45px;
+}
+.slick-next {
+    right: -45px;
+}

@@ -1,0 +1,10 @@
+.blogCard:hover .blogImage{
+    scale: 1.25;
+}
+.blogCard{ 
+    transition: all .3s ease-out;
+}
+.blogImage{
+    transition: all .3s ease-out;
+
+}

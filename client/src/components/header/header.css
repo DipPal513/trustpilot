@@ -1,0 +1,48 @@
+.menu li {
+  position: relative;
+  display: inline-block;
+  height: 100%;
+  padding: 20px 0;
+}
+@meida screen and (max-width:1024px) {
+  .menu li {
+    padding: 0;
+  }
+}
+.menu li::after {
+  content: "";
+  position: absolute;
+  background-color: black;
+  width: 100%;
+  height: 4px;
+  bottom: 0;
+  left: 0;
+  display: none;
+  transition: all 0.2s ease in;
+}
+.menu li:hover::after {
+  display: block;
+}
+.businessBtn{
+  color:black;
+  background: transparent;
+  border: 2px solid black;
+  padding: 8px 20px;
+  position: relative;
+  z-index: 1;
+  transition: all .3s ease-in;
+}
+.businessBtn::after{
+  content: "";
+  background: var(--main-color);
+  height: 100%;
+  left: 0;
+  top: 0;
+  transition: all .3s ease-in;
+  z-index: -1;
+  width: 0;
+  position: absolute;
+}
+.businessBtn:hover::after{
+  width: 100%;
+}
